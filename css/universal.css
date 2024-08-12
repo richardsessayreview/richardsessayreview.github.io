@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+
+:root {
+    --red: #903131;
+    --text: #5C5C5C;
+    --line: #B0B0B0;
+    --link: #289BF9;
+    --huge: 100px;
+    --large: 70px;
+    --big: 40px;
+    --decent: 30px;
+    --medium: 20px;
+    --small: 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: "DM Sans";
+    background-color: white;
+    overflow-x: hidden;	
+}
+
+
+#menu {
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    height: 100px;
+    position: fixed;
+    top: 20px; 
+    border: 1px solid var(--line);
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+}
+#menucontent {
+    display: flex;
+    height: 100px;
+    justify-content: start;
+    align-items: center;
+    width: 175px;
+
+}
+#menubutton {
+    display: none;
+}
+#menu-title {
+    font-family: "Chonburi";
+    color: var(--red);
+    font-size: var(--big);
+}
+#menu-title:hover {
+    cursor: pointer;    
+}
+
+#menu-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#menu-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 100px; 
+    margin-right: 150px;
+}
+
+
+
+.menu-button {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-weight: 600;
+    color: var(--text);
+    font-size: var(--medium);
+    border: 1px solid white;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.2s;
+}
+.menu-button:hover {
+    color: var(--red);
+    border: 1px solid var(--line);
+    cursor: pointer;
+}
+
+#menu-contact {
+    background: var(--red);
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 175px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
+#menu-contact:hover {
+    background: white;
+    color: var(--red);
+}
+
+
+#contact {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    width: 1200px;
+    height: 325px;
+    border-radius: 40px;
+    border: 1px solid var(--line);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-logo {
+    width: 400px;
+    margin-left: 50px;
+    height: 100%;
+    text-align: right;
+}
+#contact-title {
+    font-size: var(--large);
+    color: var(--red);
+    font-family: "Chonburi";
+}
+#contact-subtitle {
+    margin-top: -75px;
+    font-weight: 500;
+    font-size: var(--small);
+}
+#contact-links {
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#contact-link {
+    margin-bottom: 15px;
+    color: var(--text);
+    font-size: var(--medium);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+#contact-link:hover {
+    color: var(--red);
+}
+
+#contact-request {
+    border-left: 1px solid var(--line);
+    padding-left: 50px;
+    height: 70%;
+    width: 700px;
+    margin-right: 100px;
+}
+#contact-request-title {
+    font-size: var(--decent);
+    font-family: "Chonburi";
+    color: var(--red);
+}
+#contact-request-text {
+    font-size: var(--small);
+    font-weight: 500;
+    color: var(--text);
+    margin-top: -20px;
+}
+#contact-request-redirect {
+    color: var(--link);
+    font-size: var(--small);
+}
+
+
